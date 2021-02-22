@@ -1,1 +1,8 @@
 # 自用签到脚本
+
+需要环境变量有：
+- TEXTNOW_USERNAME 用户名
+- TEXTNOW_PASSWORD 密码
+- TEXTNOW_RECIPIENT 接收信息的号码 (+16666666666)
+- TEXTNOW_MESSAGE 发送信息内容
+
