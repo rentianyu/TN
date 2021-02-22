@@ -30,7 +30,8 @@ jobs:
         playwright install
     - name: Send weekend text message
       env:
-        SCHEDULE_TEXTNOW_USERNAME: ${{ secrets.SCHEDULE_TEXTNOW_USERNAME }}
-        SCHEDULE_TEXTNOW_PASSWORD: ${{ secrets.SCHEDULE_TEXTNOW_PASSWORD }}
-        SCHEDULE_TEXTNOW_RECIPIENT: ${{ secrets.SCHEDULE_TEXTNOW_RECIPIENT }}
-      run: python scripts/send_weekend_text_message.py
+        TEXTNOW_USERNAME: ${{ secrets.TEXTNOW_USERNAME }}
+        TEXTNOW_PASSWORD: ${{ secrets.TEXTNOW_PASSWORD }}
+        TEXTNOW_RECIPIENT: ${{ secrets.TEXTNOW_RECIPIENT }}
+        TEXTNOW_MESSAGE: ${{ secrets.TEXTNOW_MESSAGE }}
+      run: python scripts/textnow.py
