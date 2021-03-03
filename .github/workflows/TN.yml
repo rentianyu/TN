@@ -15,7 +15,8 @@ env:
 jobs:
   schedule:
     name: Send text message
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
