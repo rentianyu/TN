@@ -5,7 +5,7 @@ on:
     types: [started]
 
   schedule:
-    - cron: "0 7 * * *"
+    - cron: "0 7,9,13,21 * * *"
   workflow_dispatch:
 
 env:
@@ -15,8 +15,7 @@ env:
 jobs:
   schedule:
     name: Send text message
-#     runs-on: ubuntu-latest
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     - name: Check out repository
       uses: actions/checkout@v2
